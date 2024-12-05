@@ -1,3 +1,5 @@
+import { Heart } from 'lucide-react'
+
 export default function AchievementsSection() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
