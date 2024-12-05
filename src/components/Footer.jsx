@@ -3,53 +3,61 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#5D3B8C] text-white py-16 px-8">
-      <div className="container mx-auto">
+    <footer className="bg-[#5D3B8C] text-white py-8 md:py-16 px-4 md:px-8">
+      <div className="container mx-auto max-w-6xl">
         {/* Logo */}
-        <div className="mb-16">
-          <h1 className="text-8xl font-bold tracking-wider">UIFLOW</h1>
+        <div className="mb-8 md:mb-16 text-center">
+          <h1 className="text-4xl md:text-8xl font-bold tracking-wider">UIFLOW</h1>
         </div>
 
         {/* Contact Info Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <div>
-            <p className="text-xl mb-2">IN INDIA (HQ)</p>
-            <p className="text-4xl font-light">+91 94 99 888 170</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
+          <div className="text-center md:text-left">
+            <p className="text-base md:text-xl mb-2">IN INDIA (HQ)</p>
+            <p className="text-2xl md:text-4xl font-light">+91 94 99 888 170</p>
           </div>
-          <div>
-            <p className="text-xl mb-2">For Sales</p>
-            <p className="text-4xl font-light">hi@uiflow.in</p>
+          <div className="text-center md:text-left">
+            <p className="text-base md:text-xl mb-2">For Sales</p>
+            <p className="text-2xl md:text-4xl font-light">hi@uiflow.in</p>
           </div>
         </div>
 
         {/* Navigation Links */}
-        <div className="flex flex-wrap gap-8 mb-12">
-          <Link href="/privacy-policy" className="hover:underline">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-8 md:mb-12 text-center">
+          <Link to="/privacy-policy" className="hover:underline text-sm md:text-base">
             Privacy Policy
           </Link>
-          <Link href="/refund-policy" className="hover:underline">
+          <Link to="/refund-policy" className="hover:underline text-sm md:text-base">
             Refund Policy
           </Link>
-          <Link href="/terms" className="hover:underline">
+          <Link to="/terms" className="hover:underline text-sm md:text-base">
             Terms & Conditions
           </Link>
-          <Link href="/contact" className="hover:underline">
+          <Link to="/contact" className="hover:underline text-sm md:text-base">
             Contact
           </Link>
-          <Link href="/sitemap" className="hover:underline">
+          <Link to="/sitemap" className="hover:underline text-sm md:text-base">
             Sitemap
           </Link>
         </div>
 
         {/* Copyright and Social */}
-        <div className="flex justify-between items-center">
-          <p>© Copyright by UIFLOW.</p>
-          <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-            <Linkedin className="w-6 h-6" />
-          </Link>
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <p className="text-center md:text-left text-sm md:text-base mb-4 md:mb-0">
+            © Copyright by UIFLOW.
+          </p>
+          <div className="flex justify-center">
+            <Link 
+              to="https://linkedin.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-75 transition-opacity"
+            >
+              <Linkedin className="w-5 h-5 md:w-6 md:h-6" />
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
   )
 }
-
