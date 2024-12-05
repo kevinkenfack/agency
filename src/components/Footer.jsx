@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="bg-[#4a249d] text-white py-16 px-8">
-      <div className="container mx-auto px-10 pt-10 pb-40">
+      <div className="container mx-auto">
         {/* Logo */}
         <div className="mb-8 text-center">
           <img src="/ui.svg" alt="Your Company Logo" className="mx-auto h-16" />
