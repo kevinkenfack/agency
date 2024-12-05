@@ -12,13 +12,12 @@ export default function Header() {
         </h1>
       </div>
 
-      {/* Image de la ligne courbée avec transformation personnalisée */}
+      {/* Image de la ligne courbée avec transformation sur mobile uniquement */}
       <div className="absolute bottom-0 left-0 w-full">
         <img 
           src="/hero-line-flow.svg" 
           alt="Curved Line"
-          className="w-full h-auto"
-          style={{ transform: 'translateY(-20rem)' }} // Appliquer directement la transformation
+          className="w-full h-auto sm:translate-y-[-20rem] md:translate-y-0 lg:translate-y-0"
         />
       </div>
     </header>
