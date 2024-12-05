@@ -11,7 +11,7 @@ export default function AchievementsSection() {
               <img
                 src="/smart-tab-girl-pink.webp"
                 alt="3D character illustration"
-                className="absolute h-[300px] bottom-0 left-1/2 -translate-x-1/2"
+                className="absolute h-[450px] bottom-0 left-1/2 -translate-x-1/2"
               />
             </div>
 
