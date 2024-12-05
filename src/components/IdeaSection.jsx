@@ -35,7 +35,7 @@ export default function IdeaSection() {
                 aria-hidden="true"
               />
               <img
-                src="/obscure.png"
+                src="/girl-using-laptop-sitting-floor.webp"
                 alt="Cartoon woman with laptop"
                 className="relative z-10 w-full h-full object-contain"
               />

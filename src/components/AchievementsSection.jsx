@@ -8,9 +8,7 @@ export default function AchievementsSection() {
           {/* 3D Character Card */}
           <div className="bg-[#FFF1EC] rounded-3xl p-8 flex items-center justify-center">
             <img
-              src="/obscure.png"
-              width={400}
-              height={400}
+              src="/smart-tab-girl-pink.webp"             
               alt="3D character illustration"
               className="w-full h-auto"
             />
@@ -23,9 +21,8 @@ export default function AchievementsSection() {
               <p className="text-7xl font-bold">20+</p>
             </div>
             <img
-              src="/obscure.png"
-              width={800}
-              height={400}
+              src="/world-map.svg"
+
               alt="World map dots"
               className="absolute top-0 right-0 w-2/3 h-full object-contain opacity-50"
             />
@@ -53,9 +50,8 @@ export default function AchievementsSection() {
               <h3 className="text-3xl font-bold">Tech.</h3>
             </div>
             <img
-              src="/obscure.png"
-              width={400}
-              height={400}
+              src="/girl-whith-laptop.webp"
+
               alt="3D character with laptop"
               className="absolute bottom-0 right-0 w-2/3"
             />

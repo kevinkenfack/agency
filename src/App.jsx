@@ -11,9 +11,9 @@ function App() {
     <div className="min-h-screen bg-white">
       <Header />
       <main>
-        <ProductsSection />
-        <DomainsSection />
         <AchievementsSection />
+        <DomainsSection />
+        <ProductsSection />       
         <IdeaSection />
       </main>
       <Footer />
