@@ -7,17 +7,17 @@ export default function AchievementsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* 3D Character Card */}
           <div className="relative bg-[#FFF1EC] rounded-3xl p-8 flex items-center justify-center h-[500px]">
-              {/* Image avec style absolu */}
-              <img
-                src="/smart-tab-girl-pink.webp"
-                alt="3D character illustration"
-                className="absolute h-[450px] bottom-0 left-1/2 -translate-x-1/2"
-              />
-            </div>
+            {/* Image avec style absolu */}
+            <img
+              src="/smart-tab-girl-pink.webp"
+              alt="3D character illustration"
+              className="absolute h-[450px] bottom-0 left-1/2 -translate-x-1/2"
+            />
+          </div>
 
 
           {/* World Map Card */}
-          <div className="bg-[#5D3B8C] rounded-3xl p-8 md:col-span-2 text-white relative overflow-hidden h-[400px]">
+          <div className="bg-[#5D3B8C] rounded-3xl p-8 md:col-span-2 text-white relative overflow-hidden">
             <div className="relative z-10">
               <h3 className="text-3xl font-bold mb-4">Countries</h3>
               <p className="text-7xl font-bold">20+</p>
