@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const FloatingButton = () => {
   const [scrollY, setScrollY] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
-  const favicon = '/favicon.ico'; // remplacez par l'URL de votre favicon
+  const favicon = '/floting.svg'; // remplacez par l'URL de votre favicon
 
   const handleScroll = () => {
     setScrollY(window.pageYOffset || document.documentElement.scrollTop);
