@@ -11,19 +11,20 @@ export default function IdeaSection() {
           SaaS, Web App, Mobile App, UI/UX, Graphic Design, connect with us.
           Our team will respond in 24hr with estimate.
         </p>
-        
+
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <div className="relative w-64 h-64 mx-auto">
               <div className="absolute inset-0 bg-purple-100 rounded-full"></div>
+              {/* Assure-toi que l'image existe dans le dossier public */}
               <img
-                src="/placeholder.svg"
+                src="/placeholder.svg" // Vérifie que ce fichier existe dans public
                 alt="Cartoon woman with laptop"
                 className="z-10 w-full h-full object-contain"
               />
             </div>
           </div>
-          
+
           <div className="md:w-1/2 space-y-6">
             <div className="flex items-center space-x-4">
               <Mail className="w-6 h-6 text-purple-600" />

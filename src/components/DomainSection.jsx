@@ -1,4 +1,14 @@
-import { Database, Server, Code2, Smartphone, Palette, Layout, Apple, SmartphoneIcon as Android, Globe } from 'lucide-react'
+import { 
+  Database, 
+  Server, 
+  Code2, 
+  Smartphone, 
+  Palette, 
+  Layout, 
+  Apple, 
+  SmartphoneIcon as Android, 
+  Globe 
+} from 'lucide-react'
 
 export default function DomainsSection() {
   return (
@@ -55,4 +65,3 @@ export default function DomainsSection() {
     </section>
   )
 }
-
