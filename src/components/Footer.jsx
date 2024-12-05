@@ -4,21 +4,21 @@ import { Link } from "react-router-dom";
 export default function MobileFooter() {
   return (
     <footer className="bg-[#5D3B8C] text-white py-8 px-4">
-      <div className="container mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Logo */}
         <div className="mb-8 text-center">
-          <img src="/ui.svg" alt="Your Company Logo" className="mx-auto h-16" />
+          <img src="/ui.svg" alt="UIFLOW" className="mx-auto h-16" />
         </div>
 
         {/* Contact Info Grid */}
-        <div className="grid grid-cols-1 gap-6 mb-8">
+        <div className="grid grid-cols-2 gap-6 mb-8">
           <div className="text-center">
-            <p className="text-base mb-2">IN INDIA (HQ)</p>
+            <p className="text-base mb-2">INDIA (HQ)</p>
             <p className="text-2xl font-light">+91 94 99 888 170</p>
           </div>
           <div className="text-center">
             <p className="text-base mb-2">For Sales</p>
-            <p className="text-2xl font-light">hi@yourcompany.in</p>
+            <p className="text-2xl font-light">hi@uiflow.in</p>
           </div>
         </div>
 
@@ -44,7 +44,7 @@ export default function MobileFooter() {
         {/* Copyright and Social */}
         <div className="flex flex-col justify-between items-center">
           <p className="text-center text-sm mb-4">
-            © Copyright by Your Company.
+            © Copyright by UIFLOW.
           </p>
           <div className="flex justify-center">
             <Link 
