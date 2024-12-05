@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-[#4a249d] text-white py-16 px-8">
       <div className="container mx-auto">
         {/* Logo */}
-        <div className="container mx-auto px-10 pt-10 pb-40">
+        <div className="mb-8 text-center px-10 pt-10 pb-40">
           <img src="/ui.svg" alt="Your Company Logo" className="mx-auto h-16" />
         </div>
 
