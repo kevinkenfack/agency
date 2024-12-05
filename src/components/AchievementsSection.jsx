@@ -22,8 +22,6 @@ export default function AchievementsSection() {
             </div>
             <img
               src="/world-map.svg"
-              width={800}
-              height={400}
               alt="World map dots"
               className="absolute top-0 right-0 w-2/3 h-full object-contain opacity-50"
             />
