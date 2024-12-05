@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
-const FloatingComponent = () => {
+const FloatingButton = () => {
   const [scrollY, setScrollY] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
   const favicon = '/favicon.ico'; // remplacez par l'URL de votre favicon
 
   const handleScroll = () => {
     setScrollY(window.pageYOffset || document.documentElement.scrollTop);
+    setIsVisible(scrollY <= 100);
   };
 
   useEffect(() => {
@@ -13,23 +15,23 @@ const FloatingComponent = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [scrollY]);
 
   return (
     <div
-      className={`fixed bottom-4 right-4 z-50 transition-all duration-300 ${
-        scrollY > 100 ? 'opacity-0 pointer-events-none' : ''
+      className={`fixed bottom-8 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ${
+        isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'
       }`}
     >
       <a
         href="#"
-        className="bg-white rounded-full shadow-lg hover:shadow-2xl cursor-pointer backdrop-blur-sm bg-opacity-70 p-2 flex items-center justify-center"
+        className="bg-white rounded-full shadow-lg hover:shadow-2xl cursor-pointer backdrop-blur-md bg-opacity-60 p-3 flex items-center justify-center"
       >
-        <img src={favicon} alt="Favicon" className="w-6 h-6" />
-        <a href="#" className="ml-2">
+        <img src={favicon} alt="Favicon" className="w-8 h-8" />
+        <a href="#" className="ml-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-8 w-8"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -47,4 +49,4 @@ const FloatingComponent = () => {
   );
 };
 
-export default FloatingComponent;
+export default FloatingButton;
