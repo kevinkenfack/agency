@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Header() {
   return (
     <header className="w-full min-h-screen flex flex-col justify-center items-center relative pb-16">
@@ -11,13 +13,19 @@ export default function Header() {
         </h1>
       </div>
 
-      {/* Curved Line Image */}
+      {/* Ligne courbée */}
       <div className="absolute bottom-0 left-0 w-full">
-        <img 
-          src="/hero-line-flow.svg" 
-          alt="Curved Line"
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
           className="w-full h-auto"
-        />
+        >
+          <path
+            fill="#E0D4F5"
+            fillOpacity="1"
+            d="M0,192L1440,320L1440,320L0,320Z"
+          ></path>
+        </svg>
       </div>
     </header>
   );
