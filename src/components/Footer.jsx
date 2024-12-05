@@ -4,26 +4,26 @@ import { Link } from "react-router-dom";
 export default function MobileFooter() {
   return (
     <footer className="bg-[#5D3B8C] text-white py-8 px-4">
-      <div className="max-w-7xl mx-auto">
+      <div className="container mx-auto">
         {/* Logo */}
         <div className="mb-8 text-center">
-          <img src="/ui.svg" alt="UIFLOW" className="h-16" />
+          <img src="/ui.svg" alt="Your Company Logo" className="mx-auto h-16" />
         </div>
 
-        {/* Contact Info */}
-        <div className="flex justify-between items-center mb-8">
-          <div className="text-left">
-            <p className="text-base mb-2">INDIA (HQ)</p>
+        {/* Contact Info Grid */}
+        <div className="grid grid-cols-1 gap-6 mb-8">
+          <div className="text-center">
+            <p className="text-base mb-2">IN INDIA (HQ)</p>
             <p className="text-2xl font-light">+91 94 99 888 170</p>
           </div>
-          <div className="text-left">
+          <div className="text-center">
             <p className="text-base mb-2">For Sales</p>
-            <p className="text-2xl font-light">hi@uiflow.in</p>
+            <p className="text-2xl font-light">hi@yourcompany.in</p>
           </div>
         </div>
 
         {/* Navigation Links */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-8">
+        <div className="flex flex-wrap justify-center gap-4 mb-8 text-center">
           <Link to="/privacy-policy" className="hover:underline text-sm">
             Privacy Policy
           </Link>
@@ -42,9 +42,9 @@ export default function MobileFooter() {
         </div>
 
         {/* Copyright and Social */}
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="text-center md:text-left text-sm mb-4 md:mb-0">
-            © Copyright by UIFLOW.
+        <div className="flex flex-col justify-between items-center">
+          <p className="text-center text-sm mb-4">
+            © Copyright by Your Company.
           </p>
           <div className="flex justify-center">
             <Link 
