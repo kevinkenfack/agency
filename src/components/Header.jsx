@@ -11,18 +11,8 @@ export default function Header() {
         </div>
         
         {/* Curved Line SVG */}
-        <svg
-          className="absolute bottom-0 left-0 w-full"
-          viewBox="0 0 1440 160"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M0 96.4C240 32.1333 480 0 720 0C960 0 1200 32.1333 1440 96.4V160H0V96.4Z"
-            fill="#F3F0FF"
-            fillOpacity="0.5"
-          />
+        <svg width="1728" height="331" viewBox="0 0 1728 331" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M-53.8182 326.575C20.7027 186.228 284.636 -59.3749 744.203 80.9915C1318.66 256.449 1668.73 158.883 1787.96 5.29887" stroke="#4A249D" stroke-opacity="0.2" stroke-width="16"/>
         </svg>
       </header>
     )
