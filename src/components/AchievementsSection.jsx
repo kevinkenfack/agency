@@ -6,7 +6,7 @@ export default function AchievementsSection() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* 3D Character Card */}
-          <div className="relative bg-[#FFF1EC] rounded-3xl p-8 flex items-center justify-center h-[500px]">
+          <div className="relative bg-[#FFF1EC] rounded-3xl p-8 flex items-center justify-center h-[400px]">
             {/* Image avec style absolu */}
             <img
               src="/smart-tab-girl-pink.webp"
