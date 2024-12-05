@@ -7,7 +7,7 @@ const FloatingButton = () => {
 
   const handleScroll = () => {
     setScrollY(window.pageYOffset || document.documentElement.scrollTop);
-    setIsVisible(scrollY <= 100 || scrollY >= document.documentElement.scrollHeight - window.innerHeight);
+    setIsVisible(scrollY <= 100 || scrollY >= document.documentElement.scrollHeight - window.innerHeight - 100);
   };
 
   useEffect(() => {
@@ -15,11 +15,11 @@ const FloatingButton = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [scrollY]);
+  }, []);
 
   return (
     <div
-      className={`fixed bottom-20 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 transform ${
+      className={`fixed bottom-20 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ${
         isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'
       }`}
     >
