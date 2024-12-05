@@ -1,49 +1,49 @@
 import { Linkedin } from 'lucide-react'
 import { Link } from "react-router-dom";
 
-export default function DesktopFooter() {
+export default function MobileFooter() {
   return (
-    <footer className="bg-[#5D3B8C] text-white py-16 px-8">
-      <div className="container mx-auto max-w-6xl">
+    <footer className="bg-[#5D3B8C] text-white py-8 px-4">
+      <div className="container mx-auto">
         {/* Logo */}
-        <div className="mb-16 text-center">
-          <img src="/ui.svg" alt="Your Company Logo" className="mx-auto h-20" />
+        <div className="mb-8 text-center">
+          <img src="/ui.svg" alt="Your Company Logo" className="mx-auto h-16" />
         </div>
 
         {/* Contact Info Grid */}
-        <div className="grid grid-cols-2 gap-8 mb-12">
-          <div className="text-left">
-            <p className="text-xl mb-2">IN INDIA (HQ)</p>
-            <p className="text-4xl font-light">+91 94 99 888 170</p>
+        <div className="grid grid-cols-1 gap-6 mb-8">
+          <div className="text-center">
+            <p className="text-base mb-2">IN INDIA (HQ)</p>
+            <p className="text-2xl font-light">+91 94 99 888 170</p>
           </div>
-          <div className="text-left">
-            <p className="text-xl mb-2">For Sales</p>
-            <p className="text-4xl font-light">hi@yourcompany.in</p>
+          <div className="text-center">
+            <p className="text-base mb-2">For Sales</p>
+            <p className="text-2xl font-light">hi@yourcompany.in</p>
           </div>
         </div>
 
         {/* Navigation Links */}
-        <div className="flex justify-center gap-8 mb-12 text-base">
-          <Link to="/privacy-policy" className="hover:underline">
+        <div className="flex flex-wrap justify-center gap-4 mb-8 text-center">
+          <Link to="/privacy-policy" className="hover:underline text-sm">
             Privacy Policy
           </Link>
-          <Link to="/refund-policy" className="hover:underline">
+          <Link to="/refund-policy" className="hover:underline text-sm">
             Refund Policy
           </Link>
-          <Link to="/terms" className="hover:underline">
+          <Link to="/terms" className="hover:underline text-sm">
             Terms & Conditions
           </Link>
-          <Link to="/contact" className="hover:underline">
+          <Link to="/contact" className="hover:underline text-sm">
             Contact
           </Link>
-          <Link to="/sitemap" className="hover:underline">
+          <Link to="/sitemap" className="hover:underline text-sm">
             Sitemap
           </Link>
         </div>
 
         {/* Copyright and Social */}
-        <div className="flex justify-between items-center">
-          <p className="text-left text-base">
+        <div className="flex flex-col justify-between items-center">
+          <p className="text-center text-sm mb-4">
             © Copyright by Your Company.
           </p>
           <div className="flex justify-center">
@@ -53,7 +53,7 @@ export default function DesktopFooter() {
               rel="noopener noreferrer"
               className="hover:opacity-75 transition-opacity"
             >
-              <Linkedin className="w-8 h-8" />
+              <Linkedin className="w-6 h-6" />
             </Link>
           </div>
         </div>
