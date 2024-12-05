@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 export default function MobileFooter() {
   return (
     <footer className="bg-[#5D3B8C] text-white py-8 px-4">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto flex flex-col items-center">
         {/* Logo */}
-        <div className="mb-8 text-center">
-          <img src="/ui.svg" alt="UIFLOW" className="mx-auto h-16" />
+        <div className="mb-8">
+          <img src="/ui.svg" alt="UIFLOW" className="h-16" />
         </div>
 
-        {/* Contact Info Grid */}
-        <div className="grid grid-cols-2 gap-6 mb-8">
+        {/* Contact Info */}
+        <div className="flex flex-col items-center gap-6 mb-8">
           <div className="text-center">
             <p className="text-base mb-2">INDIA (HQ)</p>
             <p className="text-2xl font-light">+91 94 99 888 170</p>
@@ -23,7 +23,7 @@ export default function MobileFooter() {
         </div>
 
         {/* Navigation Links */}
-        <div className="flex flex-wrap justify-center gap-4 mb-8 text-center">
+        <div className="flex flex-col items-center gap-4 mb-8 text-center">
           <Link to="/privacy-policy" className="hover:underline text-sm">
             Privacy Policy
           </Link>
@@ -42,7 +42,7 @@ export default function MobileFooter() {
         </div>
 
         {/* Copyright and Social */}
-        <div className="flex flex-col justify-between items-center">
+        <div className="flex flex-col items-center">
           <p className="text-center text-sm mb-4">
             © Copyright by UIFLOW.
           </p>
