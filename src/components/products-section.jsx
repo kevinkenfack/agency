@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from './CustomImage'
 
 export default function ProductsSection() {
   return (
