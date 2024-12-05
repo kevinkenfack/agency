@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto max-w-6xl">
         {/* Logo */}
         <div className="mb-8 md:mb-16 text-center">
-          <h1 className="text-4xl md:text-8xl font-bold tracking-wider">UIFLOW</h1>
+          <img src="/ui.svg" alt="Your Company Logo" className="mx-auto h-12 md:h-20" />
         </div>
 
         {/* Contact Info Grid */}
@@ -18,7 +18,7 @@ export default function Footer() {
           </div>
           <div className="text-center md:text-left">
             <p className="text-base md:text-xl mb-2">For Sales</p>
-            <p className="text-2xl md:text-4xl font-light">hi@uiflow.in</p>
+            <p className="text-2xl md:text-4xl font-light">hi@yourcompany.in</p>
           </div>
         </div>
 
@@ -44,7 +44,7 @@ export default function Footer() {
         {/* Copyright and Social */}
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-center md:text-left text-sm md:text-base mb-4 md:mb-0">
-            © Copyright by UIFLOW.
+            © Copyright by Your Company.
           </p>
           <div className="flex justify-center">
             <Link 
