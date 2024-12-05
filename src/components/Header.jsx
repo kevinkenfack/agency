@@ -17,7 +17,7 @@ export default function Header() {
         <img 
           src="/hero-line-flow.svg" 
           alt="Curved Line"
-          className="w-full h-auto sm:translate-y-[-20rem] md:translate-y-0 lg:translate-y-0"
+          className="w-full h-auto sm:translate-y-[-30rem] md:translate-y-0 lg:translate-y-0"
         />
       </div>
     </header>
