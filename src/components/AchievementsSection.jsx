@@ -50,7 +50,7 @@ export default function AchievementsSection() {
               <h3 className="text-3xl font-bold">Tech.</h3>
             </div>
             <img
-              src="/girl-whith-laptop.webp"
+              src="/girl-with-laptop.webp"
 
               alt="3D character with laptop"
               className="absolute bottom-0 right-0 w-2/3"

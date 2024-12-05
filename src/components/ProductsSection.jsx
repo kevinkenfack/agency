@@ -22,7 +22,7 @@ export default function ProductsSection() {
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               <img
-                src="/restopro-ss.webp"
+                src="/restropro-ss.webp"
          
                 alt="NextLink marketing screenshot"
                 className="rounded-2xl w-full"
@@ -51,7 +51,7 @@ export default function ProductsSection() {
             </div>
             <div>
               <img
-                src="/restopro-ss.webp"
+                src="/restropro-ss.webp"
                 alt="RestroPRO dashboard interface"
                 className="rounded-2xl w-full"
               />
