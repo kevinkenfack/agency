@@ -1,5 +1,3 @@
-import { Heart } from 'lucide-react'
-
 export default function AchievementsSection() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
@@ -7,7 +5,7 @@ export default function AchievementsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* 3D Character Card */}
           <div className="bg-[#FFF1EC] rounded-3xl p-8 flex items-center justify-center">
-            <Img
+            <img
               src="/profile.png"
               width={400}
               height={400}
@@ -22,7 +20,7 @@ export default function AchievementsSection() {
               <h3 className="text-3xl font-bold mb-4">Countries</h3>
               <p className="text-7xl font-bold">20+</p>
             </div>
-            <Img
+            <img
               src="/profile.png"
               width={800}
               height={400}
@@ -52,7 +50,7 @@ export default function AchievementsSection() {
               <h3 className="text-3xl font-bold mb-2">Edge</h3>
               <h3 className="text-3xl font-bold">Tech.</h3>
             </div>
-            <Img
+            <img
               src="/profile.png"
               width={400}
               height={400}
@@ -65,4 +63,3 @@ export default function AchievementsSection() {
     </section>
   )
 }
-

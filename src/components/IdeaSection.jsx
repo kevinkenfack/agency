@@ -16,12 +16,10 @@ export default function IdeaSection() {
           <div className="md:w-1/2 mb-8 md:mb-0">
             <div className="relative w-64 h-64 mx-auto">
               <div className="absolute inset-0 bg-purple-100 rounded-full"></div>
-              <Img
+              <img
                 src="/placeholder.svg"
                 alt="Cartoon woman with laptop"
-                layout="fill"
-                objectFit="contain"
-                className="z-10"
+                className="z-10 w-full h-full object-contain"
               />
             </div>
           </div>
@@ -48,4 +46,3 @@ export default function IdeaSection() {
     </section>
   )
 }
-

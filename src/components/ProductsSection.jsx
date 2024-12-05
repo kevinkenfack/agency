@@ -1,4 +1,3 @@
-
 export default function ProductsSection() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
@@ -22,14 +21,14 @@ export default function ProductsSection() {
               </div>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
-              <Img
+              <img
                 src="/placeholder.svg?height=600&width=800"
                 width={800}
                 height={600}
                 alt="NextLink marketing screenshot"
                 className="rounded-2xl w-full"
               />
-              <Img
+              <img
                 src="/placeholder.svg?height=600&width=800"
                 width={800}
                 height={600}
@@ -53,7 +52,7 @@ export default function ProductsSection() {
               </div>
             </div>
             <div>
-              <Img
+              <img
                 src="/placeholder.svg?height=800&width=1200"
                 width={1200}
                 height={800}
@@ -67,4 +66,3 @@ export default function ProductsSection() {
     </section>
   )
 }
-
