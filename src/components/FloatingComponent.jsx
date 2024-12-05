@@ -7,7 +7,7 @@ const FloatingButton = () => {
 
   const handleScroll = () => {
     setScrollY(window.pageYOffset || document.documentElement.scrollTop);
-    setIsVisible(scrollY <= 100);
+    setIsVisible(scrollY <= 100 || scrollY >= document.documentElement.scrollHeight - window.innerHeight);
   };
 
   useEffect(() => {
@@ -19,19 +19,19 @@ const FloatingButton = () => {
 
   return (
     <div
-      className={`fixed bottom-8 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ${
+      className={`fixed bottom-20 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 transform ${
         isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'
       }`}
     >
       <a
         href="#"
-        className="bg-white rounded-full shadow-lg hover:shadow-2xl cursor-pointer backdrop-blur-md bg-opacity-60 p-3 flex items-center justify-center"
+        className="bg-white rounded-full shadow-lg hover:shadow-2xl cursor-pointer backdrop-blur-md bg-opacity-60 p-5 flex items-center justify-center"
       >
-        <img src={favicon} alt="Favicon" className="w-8 h-8" />
-        <a href="#" className="ml-3">
+        <img src={favicon} alt="Favicon" className="w-10 h-10" />
+        <a href="#" className="ml-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-8 w-8"
+            className="h-10 w-10"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
