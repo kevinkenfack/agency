@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto">
         {/* Logo */}
         <div className="mb-8 text-center">
-          <img src="/ui.svg" alt="Your Company Logo" className="mx-auto h-16" />
+          <img src="/ui.svg" alt="Your Company Logo" className="w-full block" />
         </div>
 
         {/* Contact Info Grid */}
