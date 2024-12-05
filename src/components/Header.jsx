@@ -1,8 +1,9 @@
 export default function Header() {
   return (
     <header className="w-full min-h-screen flex flex-col justify-center relative pb-16">
-      <div className="max-w-7xl mx-auto text-center">
-        <h1 className="px-10 py-8 text-5xl sm:text-6xl md:text-8xl lg:text-9xl container mx-auto font-bold leading-tight">
+      {/* Conteneur du texte centré */}
+      <div className="container mx-auto text-center px-10 py-8">
+        <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold leading-tight">
           Your Vision
           <br />
           Our{' '}
