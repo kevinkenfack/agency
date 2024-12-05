@@ -35,7 +35,7 @@ export default function IdeaSection() {
                 aria-hidden="true"
               />
               <img
-                src="/profile.png"
+                src="/obscure.png"
                 alt="Cartoon woman with laptop"
                 className="relative z-10 w-full h-full object-contain"
               />

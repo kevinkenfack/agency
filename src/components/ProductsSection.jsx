@@ -22,14 +22,14 @@ export default function ProductsSection() {
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               <img
-                src="/profile.png"
+                src="/obscure.png"
                 width={800}
                 height={600}
                 alt="NextLink marketing screenshot"
                 className="rounded-2xl w-full"
               />
               <img
-                src="/profile.png"
+                src="/obscure.png"
                 width={800}
                 height={600}
                 alt="NextLink app interface"
@@ -53,7 +53,7 @@ export default function ProductsSection() {
             </div>
             <div>
               <img
-                src="/profile.png"
+                src="/obscure.png"
                 width={1200}
                 height={800}
                 alt="RestroPRO dashboard interface"

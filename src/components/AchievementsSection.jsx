@@ -8,7 +8,7 @@ export default function AchievementsSection() {
           {/* 3D Character Card */}
           <div className="bg-[#FFF1EC] rounded-3xl p-8 flex items-center justify-center">
             <img
-              src="/profile.png"
+              src="/obscure.png"
               width={400}
               height={400}
               alt="3D character illustration"
@@ -23,7 +23,7 @@ export default function AchievementsSection() {
               <p className="text-7xl font-bold">20+</p>
             </div>
             <img
-              src="/profile.png"
+              src="/obscure.png"
               width={800}
               height={400}
               alt="World map dots"
@@ -53,7 +53,7 @@ export default function AchievementsSection() {
               <h3 className="text-3xl font-bold">Tech.</h3>
             </div>
             <img
-              src="/profile.png"
+              src="/obscure.png"
               width={400}
               height={400}
               alt="3D character with laptop"
