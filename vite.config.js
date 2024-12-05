@@ -5,12 +5,13 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['next/image'], // Ignore le module next/image
+      external: ['next/image', 'next/link'], // Ajout de next/link
     },
   },
   resolve: {
     alias: {
-      'next/image': '/path/to/your/custom/ImageComponent.js', // Optionnel : redirige vers un composant personnalisé si nécessaire
+      'next/image': '/path/to/your/custom/ImageComponent.js', // Redirection personnalisée pour next/image si nécessaire
+      'next/link': '/path/to/your/custom/LinkComponent.js',  // Redirection pour next/link
     },
   },
 });
