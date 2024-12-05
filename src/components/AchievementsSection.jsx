@@ -54,7 +54,7 @@ export default function AchievementsSection() {
               src="/girl-with-laptop.webp"
 
               alt="3D character with laptop"
-              className="absolute bottom-0 right-0 w-[300px] h-[200px] object-contain"
+              className="absolute bottom-0 right-0 w-2/2"
             />
           </div>
         </div>
