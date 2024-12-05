@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './components/Header';
+import Header from './components/Header.jsx';
 import ProductsSection from './components/ProductsSection.jsx'
 import DomainsSection from './components/DomainSection.jsx'
 import AchievementsSection from './components/AchievementsSection.jsx'
