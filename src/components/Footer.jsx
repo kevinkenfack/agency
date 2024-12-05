@@ -1,5 +1,5 @@
 import { Linkedin } from 'lucide-react'
-import Link from 'next/link'
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -24,19 +24,19 @@ export default function Footer() {
 
         {/* Navigation Links */}
         <div className="flex flex-wrap gap-8 mb-12">
-          <Link href="/privacy-policy" className="hover:underline">
+          <Link to="/privacy-policy" className="hover:underline">
             Privacy Policy
           </Link>
-          <Link href="/refund-policy" className="hover:underline">
+          <Link to="/refund-policy" className="hover:underline">
             Refund Policy
           </Link>
-          <Link href="/terms" className="hover:underline">
+          <Link to="/terms" className="hover:underline">
             Terms & Conditions
           </Link>
-          <Link href="/contact" className="hover:underline">
+          <Link to="/contact" className="hover:underline">
             Contact
           </Link>
-          <Link href="/sitemap" className="hover:underline">
+          <Link to="/sitemap" className="hover:underline">
             Sitemap
           </Link>
         </div>
@@ -44,7 +44,7 @@ export default function Footer() {
         {/* Copyright and Social */}
         <div className="flex justify-between items-center">
           <p>© Copyright by UIFLOW.</p>
-          <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <Link to="https://linkedin.com" target="_blank" rel="noopener noreferrer">
             <Linkedin className="w-6 h-6" />
           </Link>
         </div>
