@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Mail, Phone } from 'lucide-react'
 
 export default function IdeaSection() {
@@ -17,7 +16,7 @@ export default function IdeaSection() {
           <div className="md:w-1/2 mb-8 md:mb-0">
             <div className="relative w-64 h-64 mx-auto">
               <div className="absolute inset-0 bg-purple-100 rounded-full"></div>
-              <Image
+              <Img
                 src="/placeholder.svg"
                 alt="Cartoon woman with laptop"
                 layout="fill"

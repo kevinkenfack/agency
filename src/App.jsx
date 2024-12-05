@@ -1,10 +1,10 @@
 import React from 'react'
-import Header from './components/header.jsx'
-import ProductsSection from './components/products-section.jsx'
-import DomainsSection from './components/domains-section.jsx'
-import AchievementsSection from './components/achievements-section.jsx'
-import IdeaSection from './components/idea-section.jsx'
-import Footer from './components/footer.jsx'
+import Header from './components/Header.jsx'
+import ProductsSection from './components/ProductsSection.jsx'
+import DomainsSection from './components/DomainSection.jsx'
+import AchievementsSection from './components/AchievementsSection.jsx'
+import IdeaSection from './components/IdeaSection.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
   return (

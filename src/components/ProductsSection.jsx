@@ -1,4 +1,3 @@
-import Image from './CustomImage'
 
 export default function ProductsSection() {
   return (
@@ -23,14 +22,14 @@ export default function ProductsSection() {
               </div>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
-              <Image
+              <Img
                 src="/placeholder.svg?height=600&width=800"
                 width={800}
                 height={600}
                 alt="NextLink marketing screenshot"
                 className="rounded-2xl w-full"
               />
-              <Image
+              <Img
                 src="/placeholder.svg?height=600&width=800"
                 width={800}
                 height={600}
@@ -54,7 +53,7 @@ export default function ProductsSection() {
               </div>
             </div>
             <div>
-              <Image
+              <Img
                 src="/placeholder.svg?height=800&width=1200"
                 width={1200}
                 height={800}

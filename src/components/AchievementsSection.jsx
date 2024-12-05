@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Heart } from 'lucide-react'
 
 export default function AchievementsSection() {
@@ -8,8 +7,8 @@ export default function AchievementsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* 3D Character Card */}
           <div className="bg-[#FFF1EC] rounded-3xl p-8 flex items-center justify-center">
-            <Image
-              src="/placeholder.svg?height=400&width=400"
+            <Img
+              src="/profile.png"
               width={400}
               height={400}
               alt="3D character illustration"
@@ -23,8 +22,8 @@ export default function AchievementsSection() {
               <h3 className="text-3xl font-bold mb-4">Countries</h3>
               <p className="text-7xl font-bold">20+</p>
             </div>
-            <Image
-              src="/placeholder.svg?height=400&width=800"
+            <Img
+              src="/profile.png"
               width={800}
               height={400}
               alt="World map dots"
@@ -53,8 +52,8 @@ export default function AchievementsSection() {
               <h3 className="text-3xl font-bold mb-2">Edge</h3>
               <h3 className="text-3xl font-bold">Tech.</h3>
             </div>
-            <Image
-              src="/placeholder.svg?height=400&width=400"
+            <Img
+              src="/profile.png"
               width={400}
               height={400}
               alt="3D character with laptop"
