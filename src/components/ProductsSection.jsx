@@ -1,12 +1,14 @@
+import React from 'react';
+
 export default function ProductsSection() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-6xl sm:text-7xl font-bold text-center mb-16">
+        <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold text-center mb-16">
           Our Products
         </h2>
 
-        <div className="space-y-16">
+        <div className="grid md:grid-cols-2 gap-16">
           {/* NextLink Product */}
           <div className="space-y-8">
             <div className="flex items-start gap-6">
@@ -20,19 +22,15 @@ export default function ProductsSection() {
                 </p>
               </div>
             </div>
-            <div className="grid md:grid-cols-2 gap-8">
-              <img
-                src="/restropro-ss.webp"
-         
-                alt="NextLink marketing screenshot"
-                className="rounded-2xl w-full"
-              />
+            <div>
               <img
                 src="/nextlink-ss.webp"
-
                 alt="NextLink app interface"
                 className="rounded-2xl w-full"
               />
+              <p className="mt-4 text-gray-600 text-center">
+                Organize your profile with links
+              </p>
             </div>
           </div>
 
@@ -60,5 +58,5 @@ export default function ProductsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

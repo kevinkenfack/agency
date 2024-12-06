@@ -1,4 +1,4 @@
-import { Mail, Phone } from 'lucide-react'
+import { Mail, Phone } from 'lucide-react';
 
 export default function IdeaSection() {
   const contactInfo = [
@@ -14,12 +14,12 @@ export default function IdeaSection() {
       text: "+91 94 99 888 170",
       ariaLabel: "Call us"
     }
-  ]
+  ];
 
   return (
     <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-4">
+        <h2 className="text-5xl sm:text-5xl lg:text-6xl font-bold text-center mb-4">
           Have an idea?
         </h2>
         <p className="text-lg text-center mb-12 max-w-3xl mx-auto text-gray-600">
@@ -28,9 +28,9 @@ export default function IdeaSection() {
         </p>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="md:w-1/2 relative">
-            <div className="relative w-64 h-64 mx-auto">
-              <div 
+          <div className="md:w-1/2 relative mb-8 md:mb-0 flex justify-center">
+            <div className="relative w-64 h-64">
+              <div
                 className="absolute inset-0 bg-purple-100 rounded-full"
                 aria-hidden="true"
               />
@@ -42,11 +42,11 @@ export default function IdeaSection() {
             </div>
           </div>
 
-          <div className="md:w-1/2 space-y-6">
+          <div className="md:w-1/2 space-y-6 text-center md:text-left">
             {contactInfo.map((info, index) => (
-              <div key={index} className="flex items-center space-x-4">
-                <info.icon className="w-6 h-6 text-purple-600 flex-shrink-0" />
-                <a 
+              <div key={index} className="flex items-center justify-center md:justify-start space-x-4">
+                <info.icon className="w-8 h-8 text-purple-600 flex-shrink-0" />
+                <a
                   href={info.href}
                   className="text-xl hover:underline text-gray-800 transition-colors duration-200"
                   aria-label={info.ariaLabel}
@@ -62,5 +62,5 @@ export default function IdeaSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
