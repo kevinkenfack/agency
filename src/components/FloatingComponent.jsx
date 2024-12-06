@@ -39,7 +39,7 @@ const FloatingButton = () => {
       />
       
       <a
-        href="mailto:hi@uiflow.in?subject=Inquiry"
+        href="mailto:hi@uiroom.in?subject=Inquiry"
         className="flex items-center justify-center w-12 h-12 rounded-full hover:bg-white transition active:scale-95"
       >
         <svg
@@ -48,7 +48,7 @@ const FloatingButton = () => {
           height="24"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="#6d6d6d"
+          stroke="#5D3B8C"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"

@@ -7,13 +7,13 @@ export default function Footer() {
       <div className="container mx-auto">
         {/* Logo */}
         <div className="mb-8 text-center">
-          <img src="/ui.svg" alt="Your Company Logo" className="w-full block" />
+          <img src="/ui.svg" alt="Logo uiroom" className="w-full block" />
         </div>
 
         {/* Contact Info Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div>
-            <p className="text-xl mb-2">IN INDIA 🇫🇷</p>
+            <p className="text-xl mb-2">IN FRANCE 🇫🇷</p>
             <p className="text-4xl font-light">+91 94 99 888 170</p>
           </div>
           <div>

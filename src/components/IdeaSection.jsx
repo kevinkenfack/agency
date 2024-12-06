@@ -19,7 +19,7 @@ export default function IdeaSection() {
   return (
     <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl sm:text-5xl lg:text-6xl font-bold text-center mb-4">
+        <h2 className="text-5xl sm:text-5xl lg:text-6xl font-bold text-center mb-4 text-[#5D3B8C]">
           Have an idea?
         </h2>
         <p className="text-lg text-center mb-12 max-w-3xl mx-auto text-gray-600">
