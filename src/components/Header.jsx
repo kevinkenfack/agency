@@ -3,10 +3,10 @@ import React from 'react';
 export default function Header() {
   return (
     <div id="home" className="w-full min-h-screen flex flex-col justify-center">
-      <h1 className="px-10 py-8 text-4xl md:text-7xl lg:text-8xl xl:text-9xl font-semibold container mx-auto">
+      <h1 className="px-10 py-8 text-4xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold container mx-auto">
         Your Vision
         <br />
-        Our <span className="text-[#5D3B8C] font-semibold">Expertise</span>
+        Our <span className="text-[#4a249d] font-semibold">Expertise</span>
       </h1>
       <img
         loading="lazy"
