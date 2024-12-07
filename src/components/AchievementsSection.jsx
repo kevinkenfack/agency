@@ -17,7 +17,7 @@ export default function AchievementsSection() {
 
 
           {/* World Map Card */}
-          <div className="bg-[#5D3B8C] rounded-3xl p-8 md:col-span-2 text-white relative overflow-hidden">
+          <div className="bg-[#4a249d] rounded-3xl p-8 md:col-span-2 text-white relative overflow-hidden">
             <div className="relative z-10">
               <h3 className="text-3xl font-bold mb-4">Countries</h3>
               <p className="text-7xl font-bold">20+</p>
