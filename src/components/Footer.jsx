@@ -18,7 +18,7 @@ export default function Footer() {
           </div>
           <div>
             <p className="text-xl mb-2">For Sales</p>
-            <p className="text-4xl font-light">hi@uiflow.in</p>
+            <p className="text-4xl font-light">hi@uiroom.in</p>
           </div>
         </div>
 

@@ -27,7 +27,7 @@ const FloatingButton = () => {
       }`}
     >
       <img
-        alt="UIFLOW LOGO"
+        alt="UIroomLOGO"
         loading="lazy"
         width="432"
         height="432"

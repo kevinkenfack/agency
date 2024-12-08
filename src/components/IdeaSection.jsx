@@ -4,8 +4,8 @@ export default function IdeaSection() {
   const contactInfo = [
     {
       icon: Mail,
-      href: "mailto:hi@uiflow.in",
-      text: "hi@uiflow.in",
+      href: "mailto:hi@uiroom.in",
+      text: "hi@uiroom.in",
       ariaLabel: "Send us an email"
     },
     {
