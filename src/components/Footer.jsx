@@ -36,9 +36,16 @@ export default function Footer() {
           <Link to="/contact" className="hover:underline">
             Contact
           </Link>
-          <Link to="/sitemap" className="hover:underline">
+          
+          {/* Lien vers sitemap.xml */}
+          <a 
+            href="/sitemap.xml" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
             Sitemap
-          </Link>
+          </a>
         </div>
 
         {/* Copyright and Social */}
@@ -52,4 +59,3 @@ export default function Footer() {
     </footer>
   )
 }
-
