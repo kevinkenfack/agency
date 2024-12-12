@@ -1,58 +1,75 @@
-import { Linkedin } from 'lucide-react'
+import { Linkedin, Phone, Mail } from 'lucide-react'
 import { Link } from "react-router-dom";
+import '../styles/Footer.css';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#4a249d] text-white py-16 px-8">
-      <div className="container mx-auto">
+    <footer className="footer-section">
+      <div className="footer-container">
         {/* Logo */}
-        <div className="mb-8 text-center">
-          <img src="/ui.svg" alt="Logo uiroom" className="w-full block" />
+        <div className="logo-container">
+          <img 
+            src="/ui.svg" 
+            alt="Logo uiroom" 
+            className="footer-logo"
+          />
         </div>
 
         {/* Contact Info Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <div>
-            <p className="text-xl mb-2">IN FRANCE 🇫🇷</p>
-            <p className="text-4xl font-light">+91 94 99 888 170</p>
-          </div>
-          <div>
-            <p className="text-xl mb-2">For Sales</p>
-            <p className="text-4xl font-light">hi@uiroom.in</p>
-          </div>
+          <a 
+            href="tel:+919499888170" 
+            className="contact-box group"
+          >
+            <Phone className="contact-icon-plus" />
+            <div>
+              <p className="text-xl mb-2 text-purple-200">IN FRANCE 🇫🇷</p>
+              <p className="text-4xl font-light group-hover:text-white transition-colors">
+                +91 94 99 888 170
+              </p>
+            </div>
+          </a>
+          
+          <a 
+            href="mailto:hi@uiroom.in" 
+            className="contact-box group"
+          >
+            <Mail className="contact-icon-plus" />
+            <div>
+              <p className="text-xl mb-2 text-purple-200">For Sales</p>
+              <p className="text-4xl font-light group-hover:text-white transition-colors">
+                hi@uiroom.in
+              </p>
+            </div>
+          </a>
         </div>
 
         {/* Navigation Links */}
-        <div className="flex flex-wrap gap-8 mb-12">
-          <Link to="/privacy-policy" className="hover:underline">
-            Privacy Policy
-          </Link>
-          <Link to="/refund-policy" className="hover:underline">
-            Refund Policy
-          </Link>
-          <Link to="/terms" className="hover:underline">
-            Terms & Conditions
-          </Link>
-          <Link to="/contact" className="hover:underline">
-            Contact
-          </Link>
-          
-          {/* Lien vers sitemap.xml */}
+        <div className="nav-links">
+          <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
+          <Link to="/refund-policy" className="footer-link">Refund Policy</Link>
+          <Link to="/terms" className="footer-link">Terms & Conditions</Link>
+          <Link to="/contact" className="footer-link">Contact</Link>
           <a 
             href="/sitemap.xml" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="hover:underline"
+            className="footer-link"
           >
             Sitemap
           </a>
         </div>
 
         {/* Copyright and Social */}
-        <div className="flex justify-between items-center">
-          <p>© Copyright by UIFLOW.</p>
-          <Link to="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-            <Linkedin className="w-6 h-6" />
+        <div className="footer-bottom">
+          <p className="copyright">© Copyright by UIFLOW.</p>
+          <Link 
+            to="https://linkedin.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="social-link"
+          >
+            <Linkedin className="linkedin-icon" />
           </Link>
         </div>
       </div>

@@ -1,3 +1,6 @@
+import React from 'react';
+import '../styles/DomainSection.css';
+
 export default function DomainsSection() {
   const domains = [
     {
@@ -34,32 +37,34 @@ export default function DomainsSection() {
         { placeholder: "/icon-tech/illustrator-color.svg" }
       ]
     }
-  ]
+  ];
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-      <div className="max-w-7xl mx-auto space-y-8">
-        {domains.map((domain, index) => (
-          <div key={index} className="bg-white rounded-3xl shadow-lg p-8 space-y-4">
-            <h2 className="text-4xl sm:text-5xl font-bold text-center text-[#5D3B8C]">
-              {domain.title}
-            </h2>
-            <p className="text-center text-gray-600 max-w-3xl mx-auto">
-              {domain.description}
-            </p>
-            <div className="flex flex-wrap justify-center gap-6 pt-4">
-              {domain.technologies.map((tech, iconIndex) => (
-                <img 
-                  key={iconIndex}
-                  src={tech.placeholder} 
-                  alt="Technology icon" 
-                  className="w-12 h-12 rounded-lg opacity-80 hover:opacity-100 transition-opacity"
-                />
-              ))}
+    <section className="domains-section">
+      <div className="domains-container">
+        <h2 className="domains-main-title">Our Expertise</h2>
+        <div className="domains-grid">
+          {domains.map((domain, index) => (
+            <div key={index} className="domain-card">
+              <div className="domain-content">
+                <h3 className="domain-title">{domain.title}</h3>
+                <p className="domain-description">{domain.description}</p>
+                <div className="tech-grid">
+                  {domain.technologies.map((tech, iconIndex) => (
+                    <div key={iconIndex} className="tech-icon-wrapper">
+                      <img 
+                        src={tech.placeholder} 
+                        alt={`${domain.title} technology`} 
+                        className="tech-icon"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
-  )
+  );
 }

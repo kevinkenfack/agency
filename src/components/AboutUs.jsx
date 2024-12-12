@@ -1,19 +1,46 @@
-import React from 'react'
+import React from 'react';
+import '../styles/AboutUs.css';
 
-export default function AboutUs() {
+const AboutUs = () => {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl sm:text-5xl font-bold text-[#5D3B8C] mb-6">
-          About UIROOM
-        </h2>
-        <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
-          UIROOM offers advanced digital services, including custom SaaS product development, 
-          web and app development, UI/UX design, and graphic design solutions. We transform 
-          innovative ideas into powerful digital experiences, helping businesses enhance 
-          their technological capabilities with creative and strategic solutions.
-        </p>
+    <section className="about-section">
+      <div className="about-container">
+        <div className="about-content">
+          <h2 className="about-title">About UIROOM</h2>
+          <div className="about-description">
+            <p className="about-text">
+              UIROOM offers advanced digital services, specializing in custom SaaS product development,
+              web applications, and innovative UI/UX design solutions. Our passionate team transforms
+              creative ideas into powerful digital experiences that drive business growth.
+            </p>
+          </div>
+          
+          <div className="about-stats">
+            <div className="stat-item">
+              <span className="stat-number">5+</span>
+              <span className="stat-label">Years Experience</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">100+</span>
+              <span className="stat-label">Projects Completed</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">50+</span>
+              <span className="stat-label">Happy Clients</span>
+            </div>
+          </div>
+        </div>
+        
+        <div className="about-image">
+          <img 
+            src="/girl-with-laptop.webp" 
+            alt="Our team at work"
+            className="team-image"
+          />
+        </div>
       </div>
     </section>
-  )
-}
+  );
+};
+
+export default AboutUs;

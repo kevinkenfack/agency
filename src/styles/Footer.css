@@ -1,0 +1,239 @@
+.footer-section {
+  background: linear-gradient(135deg, #4a249d 0%, #5D3B8C 100%);
+  color: white;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+  border-radius: 50%;
+  transform: translate(250px, -250px);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.footer-logo {
+  width: 100%;
+  height: auto;
+  max-width: none;
+  filter: brightness(1.1);
+  transition: filter 0.3s ease;
+}
+
+.footer-logo:hover {
+  filter: brightness(1.2);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-item:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.contact-label {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.contact-value {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: white;
+  letter-spacing: -0.5px;
+  position: relative;
+  display: inline-block;
+}
+
+.contact-value::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.8), rgba(255,255,255,0.1));
+  border-radius: 2px;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.footer-link {
+  color: white;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover {
+  opacity: 1;
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.copyright {
+  opacity: 0.8;
+}
+
+.social-link {
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+}
+
+.linkedin-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.linkedin-icon:hover {
+  opacity: 1;
+}
+
+.contact-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.contact-box:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.contact-icon-plus {
+  width: 2rem;
+  height: 2rem;
+  color: white !important;
+  transition: all 0.3s ease;
+}
+
+.contact-box:hover .contact-icon-plus {
+  color: white;
+  transform: scale(1.1);
+}
+
+.contact-box p:first-child {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-box p:last-child {
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact-item {
+    padding: 1.5rem;
+    text-align: left;
+  }
+
+  .contact-value {
+    font-size: 2rem;
+  }
+
+  .contact-box {
+    padding: 1.5rem;
+  }
+  
+  .contact-icon-plus{
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  .contact-box p:last-child {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    font-size: 0.875rem;
+  }
+} 

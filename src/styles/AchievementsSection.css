@@ -1,0 +1,104 @@
+.achievements-section {
+  padding: 6rem 2rem;
+  background: #ffffff;
+}
+
+.achievements-container {
+  max-width: 7xl;
+  margin: 0 auto;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Card styles */
+.achievement-card {
+  border-radius: 24px;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Character Card */
+.character-card {
+  background: linear-gradient(135deg, #FFF1EC 0%, #FFE4D6 100%);
+}
+
+.character-image {
+  transition: transform 0.5s ease;
+}
+
+.character-card:hover .character-image {
+  transform: translateY(-10px);
+}
+
+/* Map Card */
+.map-card {
+  background: linear-gradient(135deg, #4a249d 0%, #5D3B8C 100%);
+}
+
+.map-image {
+  transition: opacity 0.3s ease;
+}
+
+.map-card:hover .map-image {
+  opacity: 0.7;
+}
+
+/* Design & Development Card */
+.design-dev-card {
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+}
+
+.heart-icon {
+  transition: transform 0.3s ease;
+}
+
+.design-dev-card:hover .heart-icon {
+  transform: scale(1.2);
+}
+
+/* Projects Card */
+.projects-card {
+  background: linear-gradient(135deg, #B19CD9 0%, #9F85CF 100%);
+}
+
+/* Tech Card */
+.tech-card {
+  background: linear-gradient(135deg, #FFD4E5 0%, #FFC0D9 100%);
+}
+
+.tech-image {
+  transition: transform 0.3s ease;
+}
+
+.tech-card:hover .tech-image {
+  transform: translateY(-10px);
+}
+
+/* Text styles */
+.card-title {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+  background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.9) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@media (max-width: 768px) {
+  .achievements-section {
+    padding: 4rem 1.5rem;
+  }
+} 

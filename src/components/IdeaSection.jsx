@@ -1,4 +1,5 @@
 import { Mail, Phone } from 'lucide-react';
+import '../styles/IdeaSection.css';
 
 export default function IdeaSection() {
   const contactInfo = [
@@ -17,45 +18,42 @@ export default function IdeaSection() {
   ];
 
   return (
-    <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl sm:text-5xl lg:text-6xl font-bold text-center mb-4 text-[#5D3B8C]">
-          Have an idea?
-        </h2>
-        <p className="text-lg text-center mb-12 max-w-3xl mx-auto text-gray-600">
-          SaaS, Web App, Mobile App, UI/UX, Graphic Design, connect with us.
-          Our team will respond in 24hr with estimate.
-        </p>
+    <section className="idea-section">
+      <div className="idea-container">
+        <div className="idea-content">
+          <h2 className="idea-title">Have an idea?</h2>
+          <p className="idea-description">
+            SaaS, Web App, Mobile App, UI/UX, Graphic Design, connect with us.
+            Our team will respond in 24hr with estimate.
+          </p>
+        </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="md:w-1/2 relative mb-8 md:mb-0 flex justify-center">
-            <div className="relative w-64 h-64">
-              <div
-                className="absolute inset-0 bg-purple-100 rounded-full"
-                aria-hidden="true"
-              />
+        <div className="idea-grid">
+          <div className="image-container">
+            <div className="image-wrapper">
+              <div className="image-background" aria-hidden="true" />
               <img
                 src="/girl-using-laptop-sitting-floor.webp"
                 alt="Cartoon woman with laptop"
-                className="relative z-10 w-full h-full object-contain"
+                className="main-image"
               />
             </div>
           </div>
 
-          <div className="md:w-1/2 space-y-6 text-center md:text-left">
+          <div className="contact-container">
             {contactInfo.map((info, index) => (
-              <div key={index} className="flex items-center justify-center md:justify-start space-x-4">
-                <info.icon className="w-8 h-8 text-purple-600 flex-shrink-0" />
+              <div key={index} className="contact-item">
+                <info.icon className="contact-icon" />
                 <a
                   href={info.href}
-                  className="text-xl hover:underline text-gray-800 transition-colors duration-200"
+                  className="contact-link"
                   aria-label={info.ariaLabel}
                 >
                   {info.text}
                 </a>
               </div>
             ))}
-            <p className="text-sm text-gray-500 mt-4">
+            <p className="contact-note">
               *Our Team will respond in 24hrs on Business Days IST (Indian Standard Time)
             </p>
           </div>

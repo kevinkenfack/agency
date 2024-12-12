@@ -1,21 +1,23 @@
-# React + TypeScript + Vite
+# 🚀 Mon Projet Incroyable
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Aperçu
+Une landing page moderne et attractive qui captive vos visiteurs dès la première seconde.
 
-While this project uses React, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
+## ✨ Caractéristiques
+- Design responsive
+- Animations fluides
+- Performance optimisée
+- Interface utilisateur intuitive
 
-## Deploy Your Own
+## 🎨 Design
+Notre landing page utilise :
+- Une palette de couleurs harmonieuse
+- Une typographie moderne
+- Des composants Material Design
+- Des micro-interactions engageantes
 
-Deploy your own Vite project with Vercel.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/vite-react&template=vite-react)
-
-_Live Example: https://vite-react-example.vercel.app_
-
-### Deploying From Your Terminal
-
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
-
-```shell
-$ vercel
-```
+## 📱 Responsive
+Compatible avec tous les appareils :
+- Mobile
+- Tablette
+- Desktop
