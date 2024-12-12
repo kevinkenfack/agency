@@ -48,7 +48,6 @@ const TestimonialsSection = () => {
       <div className="testimonials-container">
         <h2 className="section-title">
           What Our Clients Say
-          <span className="title-accent">About Us</span>
         </h2>
         
         <Swiper
