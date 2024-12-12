@@ -18,6 +18,7 @@ import IdeaSection from './components/IdeaSection.jsx';
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
 import RefundPolicy from './pages/RefundPolicy.jsx';
 import TermsAndConditions from './pages/TermsAndConditions.jsx';
+import ProjectScroller from './components/ProjectScroller.jsx';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -53,6 +54,7 @@ function App() {
               <AboutUs />
               <AchievementsSection />
               <DomainsSection />
+              <ProjectScroller />
               <ProductsSection />
               <TestimonialsSection />
               <CTASection />
