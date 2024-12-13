@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/ProjectScroller.css';
 
 const ProjectScroller = () => {
-  const projects = [
+  const allProjects = [
     '/project/1ec2e.png',
     '/project/2be11.png',
     '/project/5e6a1.png',
@@ -20,19 +20,10 @@ const ProjectScroller = () => {
     '/project/132420.png'
   ];
 
-  // Mélanger les images pour chaque ligne
-  const shuffleArray = (array) => {
-    const newArray = [...array];
-    for (let i = newArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
-    }
-    return newArray;
-  };
-
-  const row1Projects = shuffleArray(projects);
-  const row2Projects = shuffleArray(projects);
-  const row3Projects = shuffleArray(projects);
+  // Diviser les 15 images en 3 groupes de 5
+  const firstRowProjects = allProjects.slice(0, 5);
+  const secondRowProjects = allProjects.slice(5, 10);
+  const thirdRowProjects = allProjects.slice(10, 15);
 
   return (
     <section className="projects-section">
@@ -40,7 +31,7 @@ const ProjectScroller = () => {
       <div className="scroller-container">
         <div className="scroller" style={{ '--animation-duration': '80s' }}>
           <div className="scroller-inner">
-            {row1Projects.map((project, index) => (
+            {firstRowProjects.map((project, index) => (
               <img
                 key={`row1-1-${index}`}
                 src={project}
@@ -49,7 +40,7 @@ const ProjectScroller = () => {
                 loading="lazy"
               />
             ))}
-            {row1Projects.map((project, index) => (
+            {firstRowProjects.map((project, index) => (
               <img
                 key={`row1-2-${index}`}
                 src={project}
@@ -66,7 +57,7 @@ const ProjectScroller = () => {
       <div className="scroller-container">
         <div className="scroller" style={{ '--animation-duration': '70s' }}>
           <div className="scroller-inner reverse">
-            {row2Projects.map((project, index) => (
+            {secondRowProjects.map((project, index) => (
               <img
                 key={`row2-1-${index}`}
                 src={project}
@@ -75,7 +66,7 @@ const ProjectScroller = () => {
                 loading="lazy"
               />
             ))}
-            {row2Projects.map((project, index) => (
+            {secondRowProjects.map((project, index) => (
               <img
                 key={`row2-2-${index}`}
                 src={project}
@@ -92,7 +83,7 @@ const ProjectScroller = () => {
       <div className="scroller-container">
         <div className="scroller" style={{ '--animation-duration': '90s' }}>
           <div className="scroller-inner">
-            {row3Projects.map((project, index) => (
+            {thirdRowProjects.map((project, index) => (
               <img
                 key={`row3-1-${index}`}
                 src={project}
@@ -101,7 +92,7 @@ const ProjectScroller = () => {
                 loading="lazy"
               />
             ))}
-            {row3Projects.map((project, index) => (
+            {thirdRowProjects.map((project, index) => (
               <img
                 key={`row3-2-${index}`}
                 src={project}

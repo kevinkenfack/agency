@@ -71,6 +71,8 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
   border: 1px solid #f3f4f6;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 .stat-item:hover {
@@ -162,5 +164,24 @@
 @media (max-width: 480px) {
   .about-stats {
     grid-template-columns: 1fr;
+  }
+}
+
+.stat-item.animate {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.stat-item:nth-child(1).animate { animation-delay: 0.2s; }
+.stat-item:nth-child(2).animate { animation-delay: 0.4s; }
+.stat-item:nth-child(3).animate { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 } 

@@ -1,0 +1,173 @@
+.pricing-wrapper {
+  padding: 6rem 0;
+  background: #fafafa;
+}
+
+.pricing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(74, 36, 157, 0.1);
+  padding: 0.75rem 1.5rem;
+  border-radius: 100px;
+  color: #4a249d;
+  font-weight: 500;
+}
+
+.pulse {
+  width: 8px;
+  height: 8px;
+  background: #4a249d;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.plan-card {
+  position: relative;
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.popular-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: linear-gradient(135deg, #4a249d, #8b5cf6);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.plan-content {
+  padding: 2.5rem;
+}
+
+.plan-card h3 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.plan-description {
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #4b5563;
+}
+
+.check {
+  color: #22c55e;
+  width: 20px;
+  height: 20px;
+}
+
+.x {
+  color: #ef4444;
+  width: 20px;
+  height: 20px;
+}
+
+.book-call-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.book-call-btn:hover {
+  background: #e5e7eb;
+}
+
+.book-call-btn.pro {
+  background: linear-gradient(135deg, #4a249d, #8b5cf6);
+  color: white;
+}
+
+.book-call-btn.pro:hover {
+  opacity: 0.9;
+}
+
+.pricing-footer {
+  text-align: center;
+}
+
+.pricing-footer p {
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.schedule-consultation {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4a249d;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.schedule-consultation:hover {
+  color: #8b5cf6;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .pricing-wrapper {
+    padding: 4rem 0;
+  }
+
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+} 

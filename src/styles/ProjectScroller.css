@@ -42,7 +42,7 @@
 }
 
 .project-image:hover {
-  opacity: 0.95;
+  opacity: 0.90;
   transform: translateY(-5px);
 }
 

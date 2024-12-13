@@ -19,6 +19,8 @@ import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
 import RefundPolicy from './pages/RefundPolicy.jsx';
 import TermsAndConditions from './pages/TermsAndConditions.jsx';
 import ProjectScroller from './components/ProjectScroller.jsx';
+import PricingSection from './components/PricingSection';
+import ProcessSection from './components/ProcessSection';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -55,7 +57,9 @@ function App() {
               <AchievementsSection />
               <DomainsSection />
               <ProjectScroller />
+              <ProcessSection />
               <ProductsSection />
+              <PricingSection />
               <TestimonialsSection />
               <CTASection />
               <FAQSection />
