@@ -18,7 +18,7 @@
 .loader-logo {
   width: 150px;
   height: auto;
-  animation: pulse 2s ease-in-out infinite;
+ /**  animation: pulse 2s ease-in-out infinite; **/
 }
 
 .progress-container {
