@@ -29,7 +29,7 @@ const ProcessSection = () => {
       <div className="process-container">
         <div className="process-box">
           <div className="process-header">
-            <span className="process-subtitle">How We Work</span>
+           
             <h2>Simple & Effective Process</h2>
           </div>
 
