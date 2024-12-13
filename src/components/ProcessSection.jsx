@@ -30,7 +30,7 @@ const ProcessSection = () => {
         <div className="process-box">
           <div className="process-header">
            
-            <h2>Simple & Effective Process</h2>
+            <h2>Simple Effective Process</h2>
           </div>
 
           <div className="process-steps">

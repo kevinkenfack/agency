@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .header-gradient {
+    @apply bg-gradient-primary bg-clip-text text-transparent;
+  }
+
+  .nav-header-gradient {
+    @apply bg-gradient-primary bg-clip-text text-transparent hover:opacity-80 transition-opacity;
+  }
+
+  .button-gradient {
+    @apply bg-gradient-primary hover:opacity-90 transition-opacity;
+  }
+}
