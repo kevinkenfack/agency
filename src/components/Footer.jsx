@@ -62,7 +62,7 @@ export default function Footer() {
 
         {/* Copyright and Social */}
         <div className="footer-bottom">
-          <p className="copyright">© Copyright by UIFLOW.</p>
+          <p className="copyright">© Copyright by UIROOM.</p>
           <Link 
             to="https://linkedin.com" 
             target="_blank" 
