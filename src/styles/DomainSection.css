@@ -98,27 +98,33 @@
 }
 
 .tech-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
-  align-items: center;
+  margin-top: 1.5rem;
 }
 
 .tech-icon-wrapper {
-  background: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
   border-radius: 12px;
-  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
 }
 
 .tech-icon-wrapper:hover {
-  transform: translateY(-3px);
-  background: #f3f4f6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .tech-icon {
-  width: 100%;
-  height: auto;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }

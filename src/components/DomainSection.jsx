@@ -13,18 +13,18 @@ export default function DomainsSection() {
         { placeholder: "/icon-tech/vue-color.svg" },
         { placeholder: "/icon-tech/nuxt-color.svg" },
         { placeholder: "/icon-tech/node-js-seeklogo.svg" },
-        { placeholder: "/icon-tech/shopify-color.svg" },
         { placeholder: "/icon-tech/react.svg" },
         { placeholder: "/icon-tech/mongodb.svg" }
       ]
     },
     {
-      title: "Mobile Apps",
-      description: "Level up your mobile strategy. Let's build your next big app.",
+      title: "No-Code Solutions",
+      description: "Fast, efficient, and powerful. We leverage the best no-code platforms to build your digital presence quickly and effectively.",
       technologies: [
-        { placeholder: "/icon-tech/flutter.svg" },
-        { placeholder: "/icon-tech/apple.svg" },
-        { placeholder: "/icon-tech/android.svg" }
+        { placeholder: "/icon-tech/webflow-svgrepo-com.svg" },
+        { placeholder: "/icon-tech/shopify-color.svg" },
+        { placeholder: "/icon-tech/wordpress-svgrepo-com.svg" },
+        { placeholder: "/icon-tech/framer-svgrepo-com.svg" }
       ]
     },
     {
