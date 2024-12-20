@@ -28,7 +28,7 @@ const ModernFAQ = () => {
   }, []);
 
   return (
-    <section className="faq-container">
+    <section className="faq-container" id="faq">
       <h2 className="faq-title">Frequently Asked Questions</h2>
       <div className="faq-list">
         {faqs.map((faq, index) => (

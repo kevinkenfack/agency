@@ -40,7 +40,7 @@ export default function DomainsSection() {
   ];
 
   return (
-    <section className="domains-section">
+    <section className="domains-section" id="domains">
       <div className="domains-container">
         <h2 className="domains-main-title">Our Expertise</h2>
         <div className="domains-grid">

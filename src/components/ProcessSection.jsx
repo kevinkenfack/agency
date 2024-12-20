@@ -25,7 +25,7 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section className="process-section">
+    <section className="process-section" id="process">
       <div className="process-container">
         <div className="process-box">
           <div className="process-header">

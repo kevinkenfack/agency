@@ -5,16 +5,29 @@ import '../styles/Navigation.css';
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Optimisation avec useCallback
-  const toggleMenu = useCallback(() => {
-    setIsOpen(prev => !prev);
+  const handleNavClick = useCallback((e, sectionId) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      // Scroll plus fluide avec offset
+      const offset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+      
+      setIsOpen(false);
+    }
   }, []);
 
   return (
     <>
       <button 
         className="floating-toggle"
-        onClick={toggleMenu}
+        onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle Menu"
       >
         {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -22,11 +35,11 @@ const Navigation = () => {
 
       <div className={`glass-menu ${isOpen ? 'open' : ''}`}>
         <div className="menu-links">
-          <a href="#home" onClick={() => setIsOpen(false)}>Home</a>
-          <a href="#domains" onClick={() => setIsOpen(false)}>Services</a>
-          <a href="#projects" onClick={() => setIsOpen(false)}>Projects</a>
-          <a href="#process" onClick={() => setIsOpen(false)}>Process</a>
-          <a href="#faqsection" onClick={() => setIsOpen(false)}>FAQ</a>
+          <a href="#home" onClick={(e) => handleNavClick(e, 'home')}>Home</a>
+          <a href="#domains" onClick={(e) => handleNavClick(e, 'domains')}>Services</a>
+          <a href="#projects" onClick={(e) => handleNavClick(e, 'projects')}>Projects</a>
+          <a href="#process" onClick={(e) => handleNavClick(e, 'process')}>Process</a>
+          <a href="#faq" onClick={(e) => handleNavClick(e, 'faq')}>FAQ</a>
         </div>
       </div>
     </>

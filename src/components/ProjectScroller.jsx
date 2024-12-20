@@ -26,7 +26,7 @@ const ProjectScroller = () => {
   const thirdRowProjects = allProjects.slice(10, 15);
 
   return (
-    <section className="projects-section">
+    <section className="projects-section" id="projects">
       {/* Première ligne - défilement vers la gauche */}
       <div className="scroller-container">
         <div className="scroller" style={{ '--animation-duration': '80s' }}>
