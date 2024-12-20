@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState, useCallback } from 'react';
 import '../styles/FAQSection.css';
 
-const FAQSection = () => {
+const ModernFAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   
   const faqs = [
@@ -24,33 +23,29 @@ const FAQSection = () => {
     }
   ];
 
+  const toggleFAQ = useCallback((index) => {
+    setActiveIndex(prev => prev === index ? null : index);
+  }, []);
+
   return (
-    <section className="faq-section">
-      <h2 className="section-title">Frequently Asked Questions</h2>
-      <div className="faq-container">
+    <section className="faq-container">
+      <h2 className="faq-title">Frequently Asked Questions</h2>
+      <div className="faq-list">
         {faqs.map((faq, index) => (
           <div 
-            key={index}
-            className="faq-item"
-            onClick={() => setActiveIndex(activeIndex === index ? null : index)}
+            key={index} 
+            className={`faq-item ${activeIndex === index ? 'active' : ''}`}
+            onClick={() => toggleFAQ(index)}
+            role="button"
+            tabIndex={0}
           >
             <div className="faq-question">
-              <h3>{faq.question}</h3>
-              <span className={`icon ${activeIndex === index ? 'active' : ''}`}>+</span>
+              <span className="question-text">{faq.question}</span>
+              <span className="faq-icon" aria-hidden="true" />
             </div>
-            <AnimatePresence>
-              {activeIndex === index && (
-                <motion.div
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: 'auto', opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="faq-answer"
-                >
-                  <p>{faq.answer}</p>
-                </motion.div>
-              )}
-            </AnimatePresence>
+            <div className="faq-answer">
+              <p>{faq.answer}</p>
+            </div>
           </div>
         ))}
       </div>
@@ -58,4 +53,4 @@ const FAQSection = () => {
   );
 };
 
-export default FAQSection; 
+export default React.memo(ModernFAQ);

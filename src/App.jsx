@@ -5,6 +5,7 @@ import Footer from './components/Footer.jsx';
 import FloatingComponent from './components/FloatingComponent.jsx';
 import Loader from './components/Loader';
 import CallPage from './pages/call.jsx';
+import Navigation from './components/Navigation';
 
 // Import des sections et pages
 import AboutUs from './components/AboutUs.jsx';
@@ -45,6 +46,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Navigation />
       {!shouldHideHeader && <Header />}
 
       <Routes>
