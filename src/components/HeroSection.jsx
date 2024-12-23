@@ -1,48 +1,24 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import '../styles/HeroSection.css';
 
-const HeroSection = () => {
+export default function Header() {
   return (
-    <section className="hero-section">
-      <div className="hero-container">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="hero-content"
-        >
-          <h1 className="hero-title">
-            Transforming Ideas into
-            <span className="gradient-text"> Digital Reality</span>
-          </h1>
-          <p className="hero-subtitle">
-            We create cutting-edge digital solutions that elevate your business
-          </p>
-          <motion.button 
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="cta-button"
-          >
-            Start Your Project
-          </motion.button>
-        </motion.div>
-        
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
-          className="hero-image-container"
-        >
-          <img 
-            src="/hero-3d-image.webp" 
-            alt="3D illustration" 
-            className="hero-image"
-          />
-        </motion.div>
-      </div>
-    </section>
+    <div id="home" className="w-full min-h-screen flex flex-col justify-center">
+      <h1 className="px-10 py-8 text-4xl md:text-7xl lg:text-8xl xl:text-9xl font-bold container mx-auto">
+        Your Vision
+        <br />
+        Our <span className="text-[#4a249d] font-bold">Expertise</span>
+      </h1>
+      <img
+        loading="lazy"
+        width="1728"
+        height="331"
+        decoding="async"
+        data-nimg="1"
+        className="w-full"
+        style={{ color: 'transparent' }}
+        src="/hero-line-flow.svg"
+        alt="Curved Line"
+      />
+    </div>
   );
-};
-
-export default HeroSection; 
+}
