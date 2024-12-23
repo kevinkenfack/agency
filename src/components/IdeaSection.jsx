@@ -23,7 +23,7 @@ export default function IdeaSection() {
         <div className="idea-content">
           <h2 className="idea-title">Have an idea?</h2>
           <p className="idea-description">
-            SaaS, Web App, Mobile App, UI/UX, Graphic Design, connect with us.
+            SaaS, Web App, UI/UX, Graphic Design, connect with us.
             Our team will respond in 24hr with estimate.
           </p>
         </div>
