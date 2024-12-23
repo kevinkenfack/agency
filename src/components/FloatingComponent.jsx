@@ -3,22 +3,28 @@ import { Send } from 'lucide-react';
 import '../styles/FloatingComponent.css';
 
 const FloatingComponent = () => {
-  const [isVisible, setIsVisible] = useState(true);
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [scrollDirection, setScrollDirection] = useState('up');
+  const [lastScroll, setLastScroll] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      setIsVisible(prevScrollPos > currentScrollPos || currentScrollPos < 100);
-      setPrevScrollPos(currentScrollPos);
+      const currentScroll = window.pageYOffset;
+      
+      if (currentScroll > lastScroll && currentScroll > 100) {
+        setScrollDirection('down');
+      } else {
+        setScrollDirection('up');
+      }
+      
+      setLastScroll(currentScroll);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [prevScrollPos]);
+  }, [lastScroll]);
 
   return (
-    <div className={`floating-button ${isVisible ? 'visible' : 'hidden'}`}>
+    <div className={`floating-button ${scrollDirection}`}>
       <img
         alt="UIroomLOGO"
         src="/floting.svg"

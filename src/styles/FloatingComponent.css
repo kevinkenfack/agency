@@ -15,22 +15,15 @@
   justify-content: space-between;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   z-index: 50;
-  transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: all 0.3s ease;
 }
 
-.floating-button.visible {
+.floating-button.down {
+  transform: translateX(-50%) translateY(120%);
+}
+
+.floating-button.up {
   transform: translateX(-50%) translateY(0);
-  opacity: 1;
-  pointer-events: all;
-  visibility: visible;
-}
-
-.floating-button.hidden {
-  transform: translateX(-50%) translateY(100px);
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  transition: all 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .floating-logo {
@@ -89,4 +82,11 @@
     width: 26px;
     height: 26px;
   }
-}  
+}
+
+@media (max-width: 480px) {
+
+  .floating-button.down {
+    transform: translateX(-50%) translateY(135%);
+  }
+}
